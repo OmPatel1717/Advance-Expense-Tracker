@@ -1,0 +1,51 @@
+.lnk{
+    text-decoration: none;
+}
+.btnStyle {
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 32px;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 14px 0 rgba(221,36,118,0.15);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  letter-spacing: 1px;
+}
+
+.btnStyle:hover, .btnStyle:focus {
+  background: linear-gradient(90deg, #dd2476 0%, #ff512f 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px 0 rgba(221,36,118,0.25);
+}
+
+/* Stylish form fields */
+.form-control, .form-select {
+  border-radius: 18px !important;
+  border: 1.5px solid #dd2476 !important;
+  padding: 12px 18px !important;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(221,36,118,0.07);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #ff512f !important;
+  box-shadow: 0 4px 16px 0 rgba(221,36,118,0.15);
+  outline: none;
+}
+
+/* Stylish form labels */
+.form-label, label {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 500;
+  color: #dd2476 !important;
+  letter-spacing: 0.5px;
+}
+
+/* Add a Google Fonts import for Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');

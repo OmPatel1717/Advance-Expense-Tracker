@@ -1,0 +1,223 @@
+.filterRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.data-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  background: #181818;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(221,36,118,0.10);
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.data-table thead th {
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  padding: 16px 12px;
+}
+
+.data-table tbody td {
+  color: #fff;
+  font-size: 1rem;
+  border-top: 1px solid #333;
+  padding: 14px 12px;
+}
+
+.data-table tbody tr {
+  transition: background 0.2s;
+}
+
+.data-table tbody tr:hover {
+  background: rgba(221,36,118,0.08);
+}
+
+.data-table {
+  margin-top: 32px;
+}
+
+/* Stylish Add New and Reset Filter buttons */
+.addNew, .containerBtn .btn {
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%) !important;
+  border: none !important;
+  color: #fff !important;
+  border-radius: 30px !important;
+  padding: 10px 32px !important;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 14px 0 rgba(221,36,118,0.15) !important;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1) !important;
+  letter-spacing: 1px !important;
+}
+
+.addNew:hover, .containerBtn .btn:hover {
+  background: linear-gradient(90deg, #dd2476 0%, #ff512f 100%) !important;
+  color: #fff !important;
+  transform: translateY(-2px) scale(1.04) !important;
+  box-shadow: 0 8px 24px 0 rgba(221,36,118,0.25) !important;
+}
+
+/* Add a Google Fonts import for Poppins if not already present */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.icons-handle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    /* width: 100%; */
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+  
+/* .data-table tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+  
+.data-table tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+} */
+
+.containerBtn{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 20px;
+}
+.mobileBtn{
+    display: none !important;
+}
+
+.iconBtnBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+    
+
+}
+
+.iconActive{
+    background-color: white;
+    color: black;
+}
+.iconDeactive{
+    background-color: rgb(78, 74, 78);
+    color: black;
+}
+
+/* Stylish dashboard boxes/cards */
+.card {
+  background: rgba(24, 24, 24, 0.85);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px 0 rgba(221,36,118,0.18);
+  border: 2px solid rgba(221,36,118,0.18);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.25s cubic-bezier(.25,.8,.25,1), box-shadow 0.25s cubic-bezier(.25,.8,.25,1), border 0.25s;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 16px 48px 0 rgba(221,36,118,0.28);
+  border: 2px solid #dd2476;
+}
+
+.card-header {
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%) !important;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-bottom: none !important;
+  border-radius: 22px 22px 0 0;
+  letter-spacing: 1px;
+  padding: 18px 20px;
+}
+
+.card-body {
+  padding: 24px 20px 20px 20px;
+  color: #fff;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.05rem;
+  background: transparent;
+}
+
+.card-title {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  color: #ff512f;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .filterRow {
+        padding: 0px !important;
+        margin-top: 0px !important;
+        display: flex;
+        gap: "5px";
+        
+    }
+    .addNew{
+        /* padding-top: 20px; */
+        display: none !important;
+    }
+    .mobileBtn{
+        display: inline-block !important;
+    }
+    .iconBtnBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0px;
+        
+    }
+    
+    .date{
+        /* padding: 10px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: "10px";
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .date .form-group{
+        width: 45%;
+    }
+
+    .containerBtn{
+        margin-left: 0px !important;
+    }
+}
